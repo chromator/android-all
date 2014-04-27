@@ -1,5 +1,9 @@
 android-knowhow
 ===============
+Only expert knows!
+
+- In order to make an image fit inside its bound use, scaletype as fitXY
+- When using ViewPager inside a ViewPager, for child ViewPager use getChildFragementManager, else it gives error.
 
 Sample programs for Android
 
