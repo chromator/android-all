@@ -1,0 +1,2 @@
+Example from :
+http://www.vogella.com/articles/AndroidTesting/article.html

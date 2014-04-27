@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="hello">Hello World, SoftwarePassionView!</string>
+    <string name="app_name">Software Passion</string>
+    <string name="main_no_items">No orders to display</string>
+<string name="add_item">Add item</string>
+<string name="quit">Quit</string>
+</resources>
