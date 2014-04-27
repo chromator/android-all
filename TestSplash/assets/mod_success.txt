@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<getModulesResponse>
+      <status>
+              <code>0</code>
+               <message>SUCCESS</message>
+       </status>
+       <modules>
+			<module>
+			   <moduleID>MODULE_ID</moduleID>
+				<moduleUserID>MODULE_USER_ID</moduleUserID>
+				<moduleTitle>MODULE_TITLE</moduleTitle>
+				<moduleDescription>MODULE_DESCRIPTION</moduleDescription>
+				<moduleThumb>MODULE_LOGO_IMAGE_URL</moduleThumb>
+				<moduleDatatime>FLAG</moduleDatatime>
+				<moduleImages>
+					<moduleImage>
+					<imageID>IMAGE_ID</imageID>
+					<imageThumbURL>IMAGE_THUMB_URL</imageThumbURL>
+					<imageURL>IMAGE_URL</imageURL>
+					<imageDatetime>IMAGE_DATE_TIME</imageDatetime>
+				</moduleImage>
+				<moduleImage>
+					<imageID>IMAGE_ID</imageID>
+					<imageThumbURL>IMAGE_THUMB_URL</imageThumbURL>
+					<imageURL>IMAGE_URL</imageURL>
+					<imageDatetime>IMAGE_DATE_TIME</imageDatetime>
+				</moduleImage>
+				</moduleImages>
+				<moduleVideos>
+					<moduleVideo>
+					  <videoID>IMAGE_ID</videoID>
+					  <videoThumbURL>IMAGE_THUMB_URL</videoThumbURL>
+					  <videoURL>IMAGE_URL</videoURL>
+					  <videoDatetime>IMAGE_DATE_TIME</videoDatetime>
+					</moduleVideo>
+				</moduleVideos>
+			</module>	
+		</modules>
+</getModulesResponse>

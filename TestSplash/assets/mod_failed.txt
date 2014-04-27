@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<getModulesResponse>
+   <status>
+       <code>1</code>
+       <message>There are no modules available in the list!</message>
+   </status>
+</getModulesResponse>
