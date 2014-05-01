@@ -5,6 +5,13 @@ Only expert knows!
 - In order to make an image fit inside its bound use, scaletype as fitXY
 - When using ViewPager inside a ViewPager, for child ViewPager use getChildFragementManager, else it gives error.
 
+MobiLockerDemo : Use of ViewPager with fragments and backstack
+
+ExpandableListView : Excellent example of expandable and collapsible list view. 0th element is selected when any group element is collapsed.
+Any element other than 0th element is moved up when expanded.
+
+TestWorkerThread : Basic implementation of worker thread using Queue(using Vectors), wait, notify
+
 Sample programs for Android
 
 Learning new library, package
@@ -22,11 +29,6 @@ http://www.vogella.com/tutorials/android.html
 
 - Andrdoi UI designing website
 http://www.android-app-patterns.com/
-
-ExpandableListView : Excellent example of expandable and collapsible list view. 0th element is selected when any group element is collapsed.
-Any element other than 0th element is moved up when expanded.
-
-TestWorkerThread : Basic implementation of worker thread using Queue(using Vectors), wait, notify
 
 OCR-Tesseract/photo_capture : Implementation of below example
 Tutorial on setting up OCR library tesseract using NDK

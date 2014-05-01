@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    style="@style/fragmentTheme">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" 
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/content_background"
+        >
+
+        <TableRow >
+	        <TextView
+	          android:text="@string/account_no"
+	            android:padding="3dip" 
+	            android:textAppearance="@android:style/TextAppearance.Medium"/>
+	        <TextView
+	            android:text="@string/account_no_val"
+	            android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+	          	android:text="@string/branch"
+	            android:padding="3dip" 
+	            android:textAppearance="@android:style/TextAppearance.Medium" />
+	        <TextView	            
+	            android:text="@string/branch_val"
+	            android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+	          	android:text="@string/name"
+	            android:padding="3dip" 
+	            android:textAppearance="@android:style/TextAppearance.Medium" />
+	        <TextView	            
+	            android:text="@string/name_val"
+	            android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+	          	android:text="@string/balance"
+	            android:padding="3dip" 
+	            android:textAppearance="@android:style/TextAppearance.Medium"/>
+	        <TextView	            
+	            android:text="@string/balance_val"
+	            android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+	
+</RelativeLayout>

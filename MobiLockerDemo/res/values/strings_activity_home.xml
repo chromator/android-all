@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="title_activity_home">Mobile Banking</string>
+	<string name="welcome_text">Welcome Pradeep Singh</string>
+    <!-- Strings related to login -->
+	<string name="tab_my_account">My Account</string>
+	<string name="tab_Locker">Locker</string>
+	<string name="tab_my_cards">My Cards</string>
+	<string name="tab_bill_pay">Quick Pay</string>
+	
+	<string name="account_no">Account No.</string>
+	<string name="branch">Branch Name</string>
+	<string name="name">Name</string>
+	<string name="balance">Available Balance</string>
+	
+	<string name="account_no_val">21345789</string>
+	<string name="branch_val">M.G. Road</string>
+	<string name="name_val">Pradeep Singh</string>
+	<string name="balance_val">Rs. 1,00,000</string>
+	
+	<string-array name="bill_pay_list">
+	    <item>Prepaid</item>
+	    <item>Postpaid</item>
+	    <item>DTH</item>
+	    <item>Datacard</item>
+	    <item>Landline</item>
+	    <item>Electricity</item>
+	    <item>Gas Bill</item>
+	    <item>Life Insurance</item>
+	</string-array>
+
+	<string-array name="card_home_list">
+	    <item>Register A Card</item>
+	    <item>View Registered cards</item>
+	    <item>Shop with Card</item>
+	</string-array>	
+</resources>

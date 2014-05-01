@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- the theme applied to home activity -->
+    <style name="CustomActivityTheme" parent="@android:style/Theme.Holo">
+         <item name="android:actionBarTabTextStyle">@style/CustomTabTextStyle</item>
+ <!--    	 <item name="android:actionBarTabStyle">@style/CustomTabbackground</item>
+      	 <item name="android:actionBarTabBarStyle">@style/CustomTabBarbackground</item>  -->
+    </style>
+
+    <!-- style for the action bar tab text -->
+    <style name="CustomTabTextStyle"  >
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+	<!--  tab background color  -->   
+    <style name="CustomTabbackground" parent="@style/AppTheme">
+        <item name="android:background">#1E5995</item>
+    </style>
+    <!--  tab background bar color  -->   
+    <style name="CustomTabBarbackground" parent="@android:style/Theme.Holo">
+        <item name="android:background">#CC674F</item>
+    </style>
+    
+    <style name="fragmentTheme" >
+        <item name="android:background">#D5F0F9</item>
+    </style>
+
+</resources>
