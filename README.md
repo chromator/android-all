@@ -59,3 +59,9 @@ http://www.growingwiththeweb.com/2014/01/handy-adb-commands-for-android.html
 
 animations in Android
 http://cogitolearning.co.uk/?p=1404
+
+Samsung USB drivers
+http://www.samsung.com/in/support/model/GT-I9100LKAINU-downloads
+
+Eclipse plugin for SVN
+http://www.eclipse.org/subversive/latest-releases.php
