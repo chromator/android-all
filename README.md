@@ -5,6 +5,8 @@ Only expert knows!
 - In order to make an image fit inside its bound use, scaletype as fitXY
 - When using ViewPager inside a ViewPager, for child ViewPager use getChildFragementManager, else it gives error.
 
+Project templates from Google: http://developer.android.com/tools/projects/templates.html
+
 MobiLockerDemo : Use of ViewPager with fragments and backstack
 
 ExpandableListView : Excellent example of expandable and collapsible list view. 0th element is selected when any group element is collapsed.

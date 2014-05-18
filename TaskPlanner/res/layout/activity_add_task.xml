@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddTaskActivity" >
+
+    <RelativeLayout
+        android:id="@+id/lay_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/lbl_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_task_lable" />
+
+        <ImageView
+            android:id="@+id/img_help_task"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_toRightOf="@id/lbl_task"
+            android:src="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/edit_task"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_task"
+            android:layout_marginTop="@dimen/default_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_task"
+        android:layout_marginTop="@dimen/default_margin" >
+
+        <TextView
+            android:id="@+id/lbl_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_notes_label" />
+
+        <ImageView
+            android:id="@+id/img_help_notes"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_toRightOf="@id/lbl_notes"
+            android:src="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/edit_notes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_notes"
+            android:layout_marginTop="@dimen/default_margin"
+            android:lines="4" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lbl_is_important"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_notes"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/txt_is_important" />
+
+    <RadioGroup
+        android:id="@+id/radio_imp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_is_important"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_yes_imp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_yes" />
+
+        <RadioButton
+            android:id="@+id/radio_no_imp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbl_is_urgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_imp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/txt_is_urgent" />
+
+    <RadioGroup
+        android:id="@+id/radio_urg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_is_urgent"
+        android:layout_marginTop="@dimen/default_margin"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_yes_urg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_yes" />
+
+        <RadioButton
+            android:id="@+id/radio_no_urg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_no" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio_urg"
+        android:layout_below="@+id/radio_urg"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/txt_add" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_add"
+        android:layout_alignBottom="@+id/btn_add"
+        android:layout_toRightOf="@+id/btn_add"
+        android:text="@string/txt_cancel" />
+
+</RelativeLayout>
