@@ -1,0 +1,11 @@
+What is new?
+
+RecyclerView
+- ListView or GridView successor
+- support v7 library
+
+API level changes:
+------------------
+Action bar tabs are removed, drop down navigation
+Getrecenttasks, getrunningtasks deprecated
+batterymanager gives direct information
