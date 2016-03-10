@@ -1,47 +1,54 @@
 package pane.multi.test.com.testmultipanefragment;
 
 
-import android.app.ListFragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VersionsFragment extends ListFragment {
+public class VersionsFragment extends Fragment {
 
+    private RecyclerView mRecyclerView;
+    private OnVersionNameSelectionChangeListener mListener;
 
-    // Mandatory empty constructor for the fragment manager to instantiate the fragment
-
-    public VersionsFragment() {
-
+    public VersionsFragment(OnVersionNameSelectionChangeListener listener) {
+        mListener = listener;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View view = inflater.inflate(R.layout.fragment_versions, container, false);
+
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.version_list);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+
+        return view;
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        String[] versionName = getResources().getStringArray(R.array.version_names);
+        List<DataModal> dataModalList = new ArrayList<DataModal>();
+        dataModalList.add(new DataModal("Label1", "Description1"));
+        dataModalList.add(new DataModal("Label2", "Description2"));
+        dataModalList.add(new DataModal("Label3", "Description3"));
+        dataModalList.add(new DataModal("Label4", "Description4"));
+        dataModalList.add(new DataModal("Label5", "Description5"));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, versionName);
-        setListAdapter(adapter);
-    }
-
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        OnVersionNameSelectionChangeListener listener = (OnVersionNameSelectionChangeListener) getActivity();
-        listener.OnSelectionChanged(position);
+        RecyclerAdapter adapter = new RecyclerAdapter(getActivity(), dataModalList);
+        adapter.setListener(mListener);
+        mRecyclerView.setAdapter(adapter);
     }
 
 }

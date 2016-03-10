@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity implements OnVersionNameSele
             }
 
             // Create an Instance of Fragment
-            VersionsFragment versionsFragment = new VersionsFragment();
+            VersionsFragment versionsFragment = new VersionsFragment(this);
             versionsFragment.setArguments(getIntent().getExtras());
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, versionsFragment)
                     .commit();
         }
