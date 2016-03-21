@@ -6,7 +6,7 @@
     android:orientation="horizontal">
 
     <fragment
-        android:id="@+id/names_fragment"
+        android:id="@+id/fragment_container"
         android:name="pane.multi.test.com.testmultipanefragment.VersionsFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"

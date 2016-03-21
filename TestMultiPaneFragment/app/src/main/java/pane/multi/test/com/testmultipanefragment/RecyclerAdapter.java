@@ -16,11 +16,12 @@ import java.util.List;
 /**
  * Created by swaroop.kulkarni on 3/8/2016.
  */
-public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.RecycleViewHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecycleViewHolder> {
 
     private Context mContext;
     private List<DataModal> mDataModalList;
     private OnVersionNameSelectionChangeListener mListener;
+    private int mSelectedPosition = -1;
 
     public RecyclerAdapter(Context context, List<DataModal> dataModals) {
         mDataModalList = dataModals;
@@ -43,7 +44,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.Recyc
     }
 
     @Override
-    public void onBindViewHolder(RecyclerAdapter.RecycleViewHolder holder, final int position) {
+    public void onBindViewHolder(final RecyclerAdapter.RecycleViewHolder holder, final int position) {
         DataModal dataModal = mDataModalList.get(position);
         holder.mDataModal = dataModal;
         holder.mListTitle.setText(dataModal.getLabel());
@@ -51,9 +52,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.Recyc
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(null != mListener) mListener.OnSelectionChanged(position);
+                if (null != mListener) mListener.OnSelectionChanged(position);
+                mSelectedPosition = position;
+                notifyDataSetChanged();
             }
         });
+
+        if(position == mSelectedPosition) {
+            holder.mView.setBackgroundColor(mContext.getResources().getColor(android.R.color.darker_gray));
+        } else {
+            holder.mView.setBackgroundColor(mContext.getResources().getColor(android.R.color.white));
+        }
     }
 
     @Override

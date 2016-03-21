@@ -21,6 +21,8 @@ public class VersionsFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private OnVersionNameSelectionChangeListener mListener;
 
+    public VersionsFragment() {}
+
     public VersionsFragment(OnVersionNameSelectionChangeListener listener) {
         mListener = listener;
     }
